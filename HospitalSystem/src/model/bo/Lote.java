@@ -8,15 +8,15 @@ import java.util.Date;
 
 public class Lote {
     private int id;
-    private String descricao;
-    private Date dataFabricacao;
-    private Date dataValidade;
+    private String descricao;   
+    private String dataFabricacao;
+    private String dataValidade;
     private String status;
 
     public Lote() {
     }
 
-    public Lote(int id, String descricao, Date dataFabricacao, Date dataValidade, String status) {
+    public Lote(int id, String descricao, String dataFabricacao, String dataValidade, String status) {
         this.id = id;
         this.descricao = descricao;
         this.dataFabricacao = dataFabricacao;
@@ -48,19 +48,19 @@ public class Lote {
         this.descricao = descricao;
     }
 
-    public Date getDataFabricacao() {
+    public String getDataFabricacao() {
         return dataFabricacao;
     }
 
-    public void setDataFabricacao(Date dataFabricacao) {
+    public void setDataFabricacao(String dataFabricacao) {
         this.dataFabricacao = dataFabricacao;
     }
 
-    public Date getDataValidade() {
+    public String getDataValidade() {
         return dataValidade;
     }
 
-    public void setDataValidade(Date dataValidade) {
+    public void setDataValidade(String dataValidade) {
         this.dataValidade = dataValidade;
     }
 

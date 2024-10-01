@@ -25,6 +25,7 @@ public class Fornecedor extends Pessoa{
 
     public void setNomeProprietario(String nomeProprietario) {
         this.nomeProprietario = nomeProprietario;
+       
     }
 
     public String getNomeFantasia() {

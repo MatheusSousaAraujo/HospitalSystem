@@ -104,11 +104,22 @@ public class ControllerCadastroUsuario implements ActionListener{
 
                 utilities.Utilities.ativaDesativa(true, this.cadastroUsuario.getjPanelBotoes());
                 utilities.Utilities.limpaComponentes(true, this.cadastroUsuario.getjPanelDados());
-
+                
                 this.cadastroUsuario.getIdField().setText(usuario.getId() + "");
                 this.cadastroUsuario.getjTextField1().setText(usuario.getNome());
+                this.cadastroUsuario.getjTextField3().setText(usuario.getNomeSocial());
+                this.cadastroUsuario.getjFormattedTextField2().setText(usuario.getDataCadastro());
+                this.cadastroUsuario.getjFormattedTextField1().setText(usuario.getCpfCnpj());
+                this.cadastroUsuario.getjFormattedTextField6().setText(usuario.getRgInscricaoEstadual());
+                this.cadastroUsuario.getjComboBox3().setSelectedItem(usuario.getSexo());
+                this.cadastroUsuario.getjTextField4().setText(usuario.getEmail());
                 this.cadastroUsuario.getjFormattedTextField3().setText(usuario.getFone1());
+                this.cadastroUsuario.getjFormattedTextField4().setText(usuario.getFone2());
+                this.cadastroUsuario.getjFormattedTextField5().setText(usuario.getCep());
+                this.cadastroUsuario.getjTextField2().setText(usuario.getComplemento());
                 this.cadastroUsuario.getjTextField5().setText(usuario.getLogin());
+                this.cadastroUsuario.getjPasswordField4().setText(usuario.getSenha());
+                this.cadastroUsuario.getjPasswordField3().setText(usuario.getSenha());
 
                 this.cadastroUsuario.getIdField().setEnabled(false);
                 this.cadastroUsuario.getjTextField1().requestFocus();

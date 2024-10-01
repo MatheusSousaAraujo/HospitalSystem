@@ -14,13 +14,13 @@ import javax.swing.JTextField;
  *
  * @author house
  */
-public class BuscaEnfermeiro extends javax.swing.JDialog {
+public class BuscaLote extends javax.swing.JDialog {
 
     /**
      * Creates new form ModeloBuscas_2024
      
      */
-    public BuscaEnfermeiro(java.awt.Frame parent, boolean modal) {
+    public BuscaLote(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -97,7 +97,7 @@ public class BuscaEnfermeiro extends javax.swing.JDialog {
         jLabelTitulo1.setBackground(new java.awt.Color(255, 102, 0));
         jLabelTitulo1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabelTitulo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelTitulo1.setText("Lista de Enfermeiros");
+        jLabelTitulo1.setText("Lista de Lote dos medicamentos");
         jLabelTitulo1.setToolTipText("");
 
         javax.swing.GroupLayout jPaneltituloLayout = new javax.swing.GroupLayout(jPaneltitulo);
@@ -124,15 +124,15 @@ public class BuscaEnfermeiro extends javax.swing.JDialog {
 
             },
             new String [] {
-                "Id", "Nome", "Contato", "CRE"
+                "Id", "Data de Fabricação", "Data de Validade ", "Status"
             }
         ));
         jTableDados.setSelectionBackground(new java.awt.Color(153, 153, 153));
         jScrollPane1.setViewportView(jTableDados);
         if (jTableDados.getColumnModel().getColumnCount() > 0) {
             jTableDados.getColumnModel().getColumn(0).setMaxWidth(40);
-            jTableDados.getColumnModel().getColumn(1).setMaxWidth(260);
-            jTableDados.getColumnModel().getColumn(2).setMaxWidth(150);
+            jTableDados.getColumnModel().getColumn(1).setMaxWidth(205);
+            jTableDados.getColumnModel().getColumn(2).setMaxWidth(205);
             jTableDados.getColumnModel().getColumn(3).setMaxWidth(100);
         }
 
@@ -282,20 +282,20 @@ public class BuscaEnfermeiro extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(BuscaEnfermeiro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModeloBuscas_2024.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(BuscaEnfermeiro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModeloBuscas_2024.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(BuscaEnfermeiro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModeloBuscas_2024.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(BuscaEnfermeiro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModeloBuscas_2024.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                BuscaEnfermeiro dialog = new BuscaEnfermeiro(new javax.swing.JFrame(), true);
+                BuscaLote dialog = new BuscaLote(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

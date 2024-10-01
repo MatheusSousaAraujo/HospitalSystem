@@ -89,10 +89,22 @@ public class ControllerCadastroPaciente implements ActionListener{
                 utilities.Utilities.ativaDesativa(true, this.cadastroPaciente.getjPanelBotoes());
                 utilities.Utilities.limpaComponentes(true, this.cadastroPaciente.getjPanelDados());
 
+              
+                
                 this.cadastroPaciente.getIdField().setText(paciente.getId() + "");
                 this.cadastroPaciente.getjTextField1().setText(paciente.getNome());
+                this.cadastroPaciente.getjTextField3().setText(paciente.getNomeSocial());
+                this.cadastroPaciente.getjFormattedTextField2().setText(paciente.getDataCadastro());
+                this.cadastroPaciente.getjFormattedTextField1().setText(paciente.getCpfCnpj());
+                this.cadastroPaciente.getjFormattedTextField6().setText(paciente.getRgInscricaoEstadual());
+                this.cadastroPaciente.getjComboBox3().setSelectedItem(paciente.getSexo());
+                this.cadastroPaciente.getjTextField4().setText(paciente.getEmail());
                 this.cadastroPaciente.getjFormattedTextField3().setText(paciente.getFone1());
-                this.cadastroPaciente.getjComboBox4().setSelectedItem(paciente.getCpfCnpj());
+                this.cadastroPaciente.getjFormattedTextField4().setText(paciente.getFone2());
+                this.cadastroPaciente.getjFormattedTextField5().setText(paciente.getCep());
+                this.cadastroPaciente.getjTextField2().setText(paciente.getComplemento());
+                this.cadastroPaciente.getjComboBox4().setSelectedItem(paciente.getTipoSanguineo());
+                
 
                 this.cadastroPaciente.getIdField().setEnabled(false);
                 this.cadastroPaciente.getjTextField1().requestFocus();

@@ -95,7 +95,22 @@ public class ControllerCadastroFornecedor implements ActionListener{
                 this.cadastroFornecedor.getjTextField1().setText(fornecedor.getNome());
                 this.cadastroFornecedor.getjFormattedTextField3().setText(fornecedor.getFone1());
                 this.cadastroFornecedor.getjTextField5().setText(fornecedor.getNomeProprietario());
-
+                
+                this.cadastroFornecedor.getIdField().setText(fornecedor.getId() + "");
+                this.cadastroFornecedor.getjTextField1().setText(fornecedor.getNome());
+                this.cadastroFornecedor.getjTextField3().setText(fornecedor.getNomeFantasia());
+                this.cadastroFornecedor.getjFormattedTextField2().setText(fornecedor.getDataCadastro());
+                this.cadastroFornecedor.getjFormattedTextField1().setText(fornecedor.getCpfCnpj());
+                this.cadastroFornecedor.getjFormattedTextField6().setText(fornecedor.getRgInscricaoEstadual());
+                this.cadastroFornecedor.getjComboBox3().setSelectedItem(fornecedor.getSexo());
+                this.cadastroFornecedor.getjTextField4().setText(fornecedor.getEmail());
+                this.cadastroFornecedor.getjFormattedTextField3().setText(fornecedor.getFone1());
+                this.cadastroFornecedor.getjFormattedTextField4().setText(fornecedor.getFone2());
+                this.cadastroFornecedor.getjFormattedTextField7().setText(fornecedor.getContato());
+                this.cadastroFornecedor.getjTextField5().setText(fornecedor.getNomeProprietario());
+                this.cadastroFornecedor.getjFormattedTextField5().setText(fornecedor.getCep());
+                this.cadastroFornecedor.getjTextField2().setText(fornecedor.getComplemento());
+                
                 this.cadastroFornecedor.getIdField().setEnabled(false);
                 this.cadastroFornecedor.getjTextField1().requestFocus();
 

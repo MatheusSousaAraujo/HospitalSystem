@@ -46,7 +46,7 @@ public class ControllerCadastroEnfermeiro implements ActionListener{
         } else if (evento.getSource() == this.cadastroEnfermeiro.getjButtonGravar()) {
 
              Enfermeiro enfermeiro  = new Enfermeiro();
-             
+            
             enfermeiro.setId(model.bo.ClasseDadosGravacao.listaEnfermeiro.size() + 1);
             enfermeiro.setNome(this.cadastroEnfermeiro.getjTextField1().getText());
             enfermeiro.setNomeSocial(this.cadastroEnfermeiro.getjTextField3().getText());
@@ -108,8 +108,20 @@ public class ControllerCadastroEnfermeiro implements ActionListener{
 
                 this.cadastroEnfermeiro.getIdField().setText(enfermeiro.getId() + "");
                 this.cadastroEnfermeiro.getjTextField1().setText(enfermeiro.getNome());
+                this.cadastroEnfermeiro.getjTextField3().setText(enfermeiro.getNomeSocial());
+                this.cadastroEnfermeiro.getjFormattedTextField2().setText(enfermeiro.getDataCadastro());
+                this.cadastroEnfermeiro.getjFormattedTextField1().setText(enfermeiro.getCpfCnpj());
+                this.cadastroEnfermeiro.getjFormattedTextField6().setText(enfermeiro.getRgInscricaoEstadual());
+                this.cadastroEnfermeiro.getjComboBox3().setSelectedItem(enfermeiro.getSexo());
+                this.cadastroEnfermeiro.getjTextField4().setText(enfermeiro.getEmail());
                 this.cadastroEnfermeiro.getjFormattedTextField3().setText(enfermeiro.getFone1());
+                this.cadastroEnfermeiro.getjFormattedTextField4().setText(enfermeiro.getFone2());
                 this.cadastroEnfermeiro.getjTextField12().setText(enfermeiro.getCre());
+                this.cadastroEnfermeiro.getjFormattedTextField5().setText(enfermeiro.getCep());
+                this.cadastroEnfermeiro.getjTextField2().setText(enfermeiro.getComplemento());
+                this.cadastroEnfermeiro.getjTextField5().setText(enfermeiro.getLogin());
+                this.cadastroEnfermeiro.getjPasswordField4().setText(enfermeiro.getSenha());
+                this.cadastroEnfermeiro.getjPasswordField3().setText(enfermeiro.getSenha());
 
                 this.cadastroEnfermeiro.getIdField().setEnabled(false);
                 this.cadastroEnfermeiro.getjTextField1().requestFocus();

@@ -101,11 +101,23 @@ public class ControllerCadastroFarmaceutico implements ActionListener{
 
                 utilities.Utilities.ativaDesativa(true, this.cadastroFarmaceutico.getjPanelBotoes());
                 utilities.Utilities.limpaComponentes(true, this.cadastroFarmaceutico.getjPanelDados());
-
+                
                 this.cadastroFarmaceutico.getIdField().setText(farmaceutico.getId() + "");
                 this.cadastroFarmaceutico.getjTextField1().setText(farmaceutico.getNome());
+                this.cadastroFarmaceutico.getjTextField3().setText(farmaceutico.getNomeSocial());
+                this.cadastroFarmaceutico.getjFormattedTextField2().setText(farmaceutico.getDataCadastro());
+                this.cadastroFarmaceutico.getjFormattedTextField1().setText(farmaceutico.getCpfCnpj());
+                this.cadastroFarmaceutico.getjFormattedTextField6().setText(farmaceutico.getRgInscricaoEstadual());
+                this.cadastroFarmaceutico.getjComboBox3().setSelectedItem(farmaceutico.getSexo());
+                this.cadastroFarmaceutico.getjTextField4().setText(farmaceutico.getEmail());
                 this.cadastroFarmaceutico.getjFormattedTextField3().setText(farmaceutico.getFone1());
+                this.cadastroFarmaceutico.getjFormattedTextField4().setText(farmaceutico.getFone2());
                 this.cadastroFarmaceutico.getjTextField12().setText(farmaceutico.getCrf());
+                this.cadastroFarmaceutico.getjFormattedTextField5().setText(farmaceutico.getCep());
+                this.cadastroFarmaceutico.getjTextField2().setText(farmaceutico.getComplemento());
+                this.cadastroFarmaceutico.getjTextField5().setText(farmaceutico.getLogin());
+                this.cadastroFarmaceutico.getjPasswordField4().setText(farmaceutico.getSenha());
+                this.cadastroFarmaceutico.getjPasswordField3().setText(farmaceutico.getSenha());
 
                 this.cadastroFarmaceutico.getIdField().setEnabled(false);
                 this.cadastroFarmaceutico.getjTextField1().requestFocus();

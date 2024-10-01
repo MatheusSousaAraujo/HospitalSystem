@@ -8,6 +8,7 @@ import controller.ControllerCadastroFarmaceutico;
 import controller.ControllerCadastroFornecedor;
 import controller.ControllerCadastroLaboratorio;
 import controller.ControllerCadastroLeito;
+import controller.ControllerCadastroLote;
 import controller.ControllerCadastroMedicamento;
 import controller.ControllerCadastroMedico;
 import controller.ControllerCadastroPaciente;
@@ -39,6 +40,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem15 = new javax.swing.JMenuItem();
         jSeparator3 = new javax.swing.JPopupMenu.Separator();
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenuItem9 = new javax.swing.JMenuItem();
@@ -91,6 +93,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
         jMenu1.add(jMenuItem7);
+
+        jMenuItem15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Black pin.png"))); // NOI18N
+        jMenuItem15.setText("Lote");
+        jMenuItem15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem15ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem15);
         jMenu1.add(jSeparator3);
 
         jMenuItem8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Notes.png"))); // NOI18N
@@ -297,6 +308,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
         ControllerCadastroFornecedor controllerCadastroFornecedor = new ControllerCadastroFornecedor (cadastroFornecedor);
         cadastroFornecedor.setVisible(true);
     }//GEN-LAST:event_jMenuItem14ActionPerformed
+
+    private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
+        CadastroLote cadastroLote = new CadastroLote(null, true);
+        ControllerCadastroLote controllerCadastroLote = new ControllerCadastroLote (cadastroLote);
+        cadastroLote.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem15ActionPerformed
                                        
         
 
@@ -350,6 +368,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
     private javax.swing.JMenuItem jMenuItem14;
+    private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;

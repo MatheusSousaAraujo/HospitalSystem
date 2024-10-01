@@ -107,8 +107,20 @@ public class ControllerCadastroMedico implements ActionListener{
 
                 this.cadastroMedico.getIdField().setText(medico.getId() + "");
                 this.cadastroMedico.getjTextField1().setText(medico.getNome());
+                this.cadastroMedico.getjTextField3().setText(medico.getNomeSocial());
+                this.cadastroMedico.getjFormattedTextField2().setText(medico.getDataCadastro());
+                this.cadastroMedico.getjFormattedTextField1().setText(medico.getCpfCnpj());
+                this.cadastroMedico.getjFormattedTextField6().setText(medico.getRgInscricaoEstadual());
+                this.cadastroMedico.getjComboBox3().setSelectedItem(medico.getSexo());
+                this.cadastroMedico.getjTextField4().setText(medico.getEmail());
                 this.cadastroMedico.getjFormattedTextField3().setText(medico.getFone1());
+                this.cadastroMedico.getjFormattedTextField4().setText(medico.getFone2());
                 this.cadastroMedico.getjTextField12().setText(medico.getCrm());
+                this.cadastroMedico.getjFormattedTextField5().setText(medico.getCep());
+                this.cadastroMedico.getjTextField2().setText(medico.getComplemento());
+                this.cadastroMedico.getjTextField5().setText(medico.getLogin());
+                this.cadastroMedico.getjPasswordField4().setText(medico.getSenha());
+                this.cadastroMedico.getjPasswordField3().setText(medico.getSenha());
 
                 this.cadastroMedico.getIdField().setEnabled(false);
                 this.cadastroMedico.getjTextField1().requestFocus();
